@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 .new .agileits-navi_search{
     padding: 10px;
     margin: 0;
@@ -43,43 +44,7 @@
       color: black;
   }
   /* For review  */
-  .rating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center
-}
-
-.rating>input {
-    display: none
-}
-
-.rating>label {
-    position: relative;
-    width: 1em;
-    font-size: 3vw;
-    color: #FFD600;
-    cursor: pointer
-}
-
-.rating>label::before {
-    content: "\2605";
-    position: absolute;
-    opacity: 0
-}
-
-.rating>label:hover:before,
-.rating>label:hover~label:before {
-    opacity: 1 !important
-}
-
-.rating>input:checked~label:before {
-    opacity: 1
-}
-
-.rating:hover>input:checked~label:before {
-    opacity: 0.4
-}
-
+ 
 body {
     background: #222225;
     color: white
@@ -119,7 +84,42 @@ footer>div>div>li>a{
   padding: 10px;
   box-shadow: 5px 10px #888888;
 }
-@media screen and (max-width:360px) {
+.carousel-item>img{
+   opacity: 0.9;
+   z-index: 10;
+}
+@media screen and (min-width:360px) {
     
+    .d-block{
+        height: 220px;
+        /* width: 360px; */
+    }
     
+}
+@media screen and (min-width:360px) {
+    
+    .d-block{
+        height: 220px;
+        /* width: 360px; */
+    }
+    
+}
+@media screen and (min-width:640px) {
+    
+    .d-block{
+        height: 418px;
+        /* width: 360px; */
+    }
+    
+}
+@media screen and (min-width:1080px) {
+    
+    .d-block{
+        height:540px;
+        /* width: 360px; */
+    }
+    
+}
+.card{
+    margin-bottom: 16px;;
 }
